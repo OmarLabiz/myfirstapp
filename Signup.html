@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/popper.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <style>
+  div.marginleft{
+	margin-left:12px;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container" style="width:500px;">
+  <h2></h2>
+  <form action="index.html">
+	<fieldset>
+	<legend>Inscription</legend>
+    <div class="form-group row">
+      <label for="email" class="col-sm-2 col-form-label">Nom:</label>
+	  <div class="col-sm-10">
+      <input type="email" class="form-control" id="nom" placeholder="Enter votre nom" name="nom">
+	  </div>
+    </div>
+    <div class="form-group row">
+      <label for="email" class="col-sm-2 col-form-label">Prenom:</label>
+	  <div class="col-sm-10">
+      <input type="email" class="form-control" id="prenom" placeholder="Enter votre prenom" name="prenom">
+	  </div>
+    </div>
+    <div class="form-group row">
+      <label for="email"  class="col-sm-2 col-form-label">Email:</label>
+	  <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" placeholder="Enter votre email" name="email">
+	  </div>
+    </div>
+    <div class="form-group row">
+      <label for="tel"  class="col-sm-2 col-form-label">Telephone:</label>
+	  <div class="col-sm-10">
+      <input type="number" class="form-control" id="tel" placeholder="Enter votre numero de telephone" name="tel">
+	  </div>
+    </div>
+    <div class="form-group row">
+      <label for="adr"  class="col-sm-2 col-form-label">Adresse:</label>
+	  <div class="col-sm-10">
+      <input type="text" class="form-control" id="adr" placeholder="Enter votre adresse" name="adr">
+	  </div>
+    </div>
+    <div class="form-group row">
+      <label for="datenee"  class="col-sm-2 col-form-label">Telephone:</label>
+	  <div class="col-sm-10">
+      <input type="date" class="form-control" id="datenee" placeholder="Enter votre date de naissance " name="datenee">
+	  </div>
+    </div>
+    <div class="form-group row">
+      <label for="numpermis"  class="col-sm-2 col-form-label">Permis:</label>
+	  <div class="col-sm-10">
+      <input type="text" class="form-control" id="numpermis" placeholder="Enter votre numero de permis" name="numpermis">
+	  </div>
+    </div>
+    <div class="form-group-inline">
+      <label>Categories de Permis:</label>
+			<div class="form-check-inline">
+				<div class="custom-control custom-checkbox marginleft">
+					<input type="checkbox" class="custom-control-input" id="j" name="j">
+					<label class="custom-control-label" for="j">J</label>
+				</div>
+				<div class="custom-control custom-checkbox marginleft">
+					<input type="checkbox" class="custom-control-input" id="a" name="a">
+					<label class="custom-control-label" for="a">A</label>
+				</div>
+				<div class="custom-control custom-checkbox marginleft">
+					<input type="checkbox" class="custom-control-input" id="b" name="b">
+					<label class="custom-control-label" for="b">B</label>
+				</div>
+				<div class="custom-control custom-checkbox marginleft">
+					<input type="checkbox" class="custom-control-input" id="c" name="c">
+					<label class="custom-control-label" for="c">C</label>
+				</div>
+				<div class="custom-control custom-checkbox marginleft">
+					<input type="checkbox" class="custom-control-input" id="d" name="d">
+					<label class="custom-control-label" for="d">D</label>
+				</div>
+				<div class="custom-control custom-checkbox marginleft">
+					<input type="checkbox" class="custom-control-input" id="eb" name="eb">
+					<label class="custom-control-label" for="eb">EB</label>
+				</div>
+				<div class="custom-control custom-checkbox marginleft">
+					<input type="checkbox" class="custom-control-input" id="ec" name="ec">
+					<label class="custom-control-label" for="ec">EC</label>
+				</div>
+				<div class="custom-control custom-checkbox marginleft">
+					<input type="checkbox" class="custom-control-input" id="ed" name="ed">
+					<label class="custom-control-label" for="ed">ED</label>
+				</div>
+			</div>
+			<br/><br/>
+			
+    <div class="form-group">
+      <label for="pwd">Permis: (Format accepté : jpg/png/jpeg/pdf)</label>
+      <input type="file" accept="application/pdf,image/*" class="form-control" id="permis" name="permis">
+    </div>
+    <button type="submit" class="btn btn-primary">Enregistrer</button>
+	</fieldset>
+  </form>
+</div>
+<hr>
+
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/popper.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <style>
+  .imgcar{
+  display: block;
+  float:left;
+  width:350px;
+  height:350px;
+  }
+  .infos-car-details{
+  display: block;
+  }
+  .lc{
+  display: block;
+  }
+  </style>
+</head>
+<body>
+
+<div class="row">
+      <div class="car_details">
+        <div class="voiture">
+            <img src="imgs/car1.png" alt="car1" class="imgcar"/>
+            <div class="infos-car-details">
+               <ul>
+                <li>Type               <span>CI</span></li>
+                <li>CARBURANT            <span>Diesel</span></li>
+                <li>Boite à vitesse     <span>Automatique</span></li>
+              </ul>
+			</div> <!-- /.voiture  -->
+		</div>
+        <hr>
+		
+        <div id="rs">
+          <h2>LOUER maintenant : <span>Jeep Cherokee</span> !</h2>
+          <form id="frm_reservation" class="form-inline" action="/fr/detail-voiture-de-location-23-jeep-cherokee" method="post">          <div class=" row formulaire_de_reservation car">
+
+               <div class="col-lg-6 col-sm-6">
+                  <div class="form-group">
+                   <div class="row">
+                     <div class="col-md-4"> <label for="Reservations_agence_depart_id" class="required">AGENCE DE DEPART	 <span class="required">*</span></label></div>
+                    <div class="col-md-8">
+                      <select class="form-control" name="Reservations[agence_depart_id]" id="Reservations_agence_depart_id">
+						<option value="">------</option>
+						<option value="1">Casablanca Centre</option>
+						<option value="2">El Jadida</option>
+						<option value="3">Marrakech</option>
+						</select>                    </div>
+                   </div>
+                  </div>
+                </div><!-- /.col-lg-6 -->
+
+                <div class="col-lg-6 col-sm-6">
+                   <div class="form-group">
+                     <div class="row">
+                        <div class="col-md-4"><label for="Reservations_agence_retour_id" class="required">AGENCE DE RETOUR	 <span class="required">*</span></label></div>
+                       <div class="col-md-8">
+                         <select class="form-control" name="Reservations[agence_retour_id]" id="Reservations_agence_retour_id">
+							<option value="">------</option>
+							<option value="1">Casablanca Centre</option>
+							<option value="2">El Jadida</option>
+							<option value="3">Marrakech</option>
+							</select>                       </div>
+                     </div>
+                    </div>
+                </div><!-- /.col-lg-6 -->
+
+                 <div class="col-md-6 col-sm-6">
+                     <div class="form-group">
+                       <div class="row">
+                         <div class="col-md-4"><label for="date-d" class="required">DATE DE DEPART	 <span class="required">*</span></label></div>
+                        <div class="col-md-8">
+                        <input class="form-control hasDatepicker" id="date-d" name="Reservations[date_depart]" type="text">                        </div>
+                       </div>
+                     </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                      <div class="form-group">
+                      <div class="row">
+                        <div class="col-md-4"><label for="date-r" class="required">DATE DE RETOUR	 <span class="required">*</span></label></div>
+                       <div class="col-md-8">
+                        <input class="form-control hasDatepicker" id="date-r" name="Reservations[date_retour]" type="text">                       </div>
+                      </div>
+                    </div>
+                </div>
+
+               <div class="col-lg-6 col-sm-6">
+                 <div class="form-group">
+                     <div class="row">
+                         <div class="col-md-4"><label for="Reservations_nom_complet" class="required">NOM ET PRéNOM <span class="required">*</span></label></div>
+                        <div class="col-md-8">
+                          <input class="form-control" name="Reservations[nom_complet]" id="Reservations_nom_complet" type="text" maxlength="255">                        </div>
+                     </div>
+                  </div>
+                </div>
+
+               <div class="col-lg-3 col-sm-3">
+                 <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-3"><label for="Reservations_email">Email</label></div>
+                         <div class="col-md-9">
+                          <input class="form-control" name="Reservations[email]" id="Reservations_email" type="text" maxlength="255">                       </div>
+                        </div>
+                 </div>
+               </div>
+
+              <div class="col-lg-3 col-sm-3">
+               <div class="form-group">
+                <div class="row">
+                       <div class="col-md-3"><label for="Reservations_tel" class="required">TéL  <span class="required">*</span></label></div>
+                       <div class="col-md-9">
+                         <input class="form-control" name="Reservations[tel]" id="Reservations_tel" type="text" maxlength="255">                       </div>
+                       </div>
+                 </div>
+              </div>
+
+
+
+          </div>
+
+          <div class="row">
+             <div class="col-md-4 col-sm-4  col-sm-offset-8">
+
+                <input class="reservation-btn" type="submit" name="yt0" value="Valider">              </div>
+          </div> <!-- ./submit  -->
+
+              </form>        </div>
+      </div>
+    </div>
+    </div>
+
+</body>
+</html>
